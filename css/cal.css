@@ -1,0 +1,67 @@
+table.cal{
+  color: #000066;
+  border-spacing: 0;
+  border-radius: 0px 0px 25px 25px;
+  border: 3px solid black;
+}
+.cal caption{
+  color: #ffffff;
+  background-color: #648e64;
+  font-size: 150%;
+  border-radius: 25px 25px 0px 0px;
+}
+tr:nth-child(odd){
+  background: #F2F2F2;
+}
+tr:nth-child(even) {
+	background: #CDBB79;
+}
+tr:last-child{
+  border-radius: 0px 0px 25px 25px;
+}
+tr:last-child>td:last-child{
+  border-radius: 0px 0px 25px 0px;
+}
+tr:last-child>td:first-child{
+  border-radius: 0px 0px 0px 25px;
+}
+.cal th, .cal td{
+  margin: 2px;
+  padding-bottom: 2px;
+}
+th{
+  text-align: center;
+  background-color: #ffffff;
+}
+td{
+  height: 70px;
+  width: 70px;
+  vertical-align: top;
+}
+.old{
+  background-color: #51A39D;
+	color:rgba(0,0,0,.25);
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png") no-repeat;
+}
+.new{
+  background-color: #e3d5a0;
+	color:rgba(0,0,0,.25);
+}
+.newsun{
+  background-color: #e3d5a0;
+  color: #ff080840;
+}
+.sun{
+  color:#ff1010;
+}
+samp{
+	display: block;
+	text-align: center;
+	color: #800000;
+	visibility: hidden;
+}
+
+/*Show the appointments when the date is clicked on*/
+td:active>samp{
+	visibility:visible;
+}
